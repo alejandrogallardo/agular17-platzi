@@ -10,4 +10,7 @@
     <input type="number" [value]="18" (change)="changeHandler($event)">
     <p>(keydown)</p>
     <input type="text" (keydown)="keydownHandler($event)">
+    <h1>Signal</h1>
+    <h2>{{name()}}</h2>
+    <input type="text" [value]="name()" (change)="changeHandler($event)">
 </div>
