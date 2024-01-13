@@ -7,5 +7,7 @@
     <button class="btn" (click)="clickHandle()">Click Me</button>
     <button class="btn" (dblclick)="clickHandle()">Click Me</button>
     <p>(change)</p>
-    <input type="text" [value]="welcome" (change)="changeHandler($event)">
+    <input type="number" [value]="18" (change)="changeHandler($event)">
+    <p>(keydown)</p>
+    <input type="text" (keydown)="keydownHandler($event)">
 </div>
